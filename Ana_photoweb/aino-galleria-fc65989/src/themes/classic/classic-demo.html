@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Galleria Classic Theme</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="../../../src/galleria.js"></script>
+        <style>
+            html,body{background:#333}
+            .content{color:#eee;font:14px/1.4 "helvetica neue", arial,sans-serif;width:620px;margin:20px auto}
+            h1{line-height:1.1;letter-spacing:-1px;}
+            a {color:#fff;}
+            #galleria{height:400px;}
+        </style>
+    </head>
+<body>
+    <div class="content">
+        <h1>Galleria Classic Theme</h1>
+        
+         <div id= "galleria">
+   
+   <a href="images/smcarlos.jpg"><img src="images/smcarlos_thumb.jpg" alt="carlos" title="Carlos"></a>
+   <a href="images/smdevon.jpg"><img src="images/smdevon_thumb.jpg" alt="devon" title="Devon"></a>
+   <a href="images/smcher.jpg"><img src="images/smcher_thumb.jpg" alt="cher" title="Cheryl"></a>
+   <a href="images/smcarlos.jpg"><img src="images/smcarlos_thumb.jpg" alt="carlos" title="Carlos"></a>
+   <a href="images/smdevon.jpg"><img src="images/smdevon_thumb.jpg" alt="devon" title="Devon"></a>
+   <a href="images/smcher.jpg"><img src="images/smcher_thumb.jpg" alt="cher" title="Cheryl"></a>
+ 
+    </div>
+    </div>
+    <script>
+    // Load the classic theme
+    Galleria.loadTheme('galleria.classic.js');
+    // Initialize Galleria
+    $('#galleria').galleria();
+    </script>
+    </body>
+</html>

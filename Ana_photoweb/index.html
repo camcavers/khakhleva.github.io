@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>PRETTY PICTURES SOLVE EVERYTHING</title>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Puritan' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+
+
+
+
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+
+
+
+<style type="text/css">
+
+/*** set the width and height to match your images **/
+
+#slideshow {
+    position:relative;
+    height:600px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+
+
+
+<div id="container">
+
+<div id="logo"><a href="index.html">
+<img src="images/logo.jpg" width="291" height="54"  style= "border: none;"/></a>
+</div>
+
+<div id="menu">
+<div id="button">
+<ul>
+<a href="index.html">HOME</a></li>
+
+<a href="gallery.html">GALLERY</a></li>
+<a href="contact.html">CONTACT</a></li>
+</ul>
+</div>
+</div>
+
+<div id="slideshow">
+    <img src="images/img1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="images/img2.jpg" alt="Slideshow Image 2" />
+    <img src="images/img3.jpg" alt="Slideshow Image 3" />
+    <img src="images/img4.jpg" alt="Slideshow Image 4" />
+
+</div>
+
+
+</body>
+</html>

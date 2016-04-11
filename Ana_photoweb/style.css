@@ -1,0 +1,193 @@
+
+body {
+	background-color:#ffffff;
+	color:#707070;
+	font-family: 'Puritan', arial, serif;
+	font-size:small;
+
+}
+
+a:link {
+	font-size:small;
+	color:#707070;
+	border:none;
+}
+a:hover {
+	font-size:small;
+	color:#000000;
+	border:none;
+}
+a:visited {
+	color:#3d3d3d;
+	border: none;
+}
+
+
+
+p. {
+ font-size: small;
+ font-family: 'Puritan', arial, serif;
+ color: #7a7a7a;
+ line-height: 2;
+ }
+
+ h3 {
+
+ 	color: #363636;
+ 	font-size: medium;
+
+ }
+
+#content {
+	width: 690px;
+	margin: 10px auto 0 auto;
+	padding: 0 60px 30px 60px;
+	border: solid 1px #cbcbcb;
+	background: #fafafa;
+	-moz-box-shadow: 0px 0px 9px #cbcbcb;
+	-webkit-box-shadow: 0px 0px 10px #cbcbcb;
+
+}
+
+
+
+#container {
+
+  position:absolute;
+  top: 50%;
+	left: 50%;
+	width:990px;
+	height:600px;
+	margin-top: -290px;
+	margin-left: -495px;
+
+}
+
+
+#menu {
+    width: 300px;
+	text-align:right;
+	margin-left:600px;
+	vertical-align:middle;
+	height:40px;
+	padding-top:20px;
+	font-family: 'Puritan', arial, serif;
+	}
+
+	#menu_2 {
+
+
+		height:40px;
+		padding-top:20px;
+		font-family: 'Puritan', arial, serif;
+		}
+
+
+#about {
+width: 900px;
+text-align: left;
+color: #707070;
+}
+
+#me {
+	width: 292px;
+	height:  179px;
+	background-image:url('images/me.jpg');
+	display:  inline;
+	float:  left;
+}
+
+#bio {
+	width: 450px;
+	float: right;
+	position: fixed;
+	margin-top:0px;
+	margin-left:310px;
+
+}
+
+
+#text_right{
+width: 500px;
+height: 100px;
+float: right;
+text-align: left;
+line-height: 2;
+margin-top:-100px;
+margin-left:90px;
+}
+
+
+
+#gallery_pic {
+	z-index:100px;
+	position: relative;
+	top:80px;
+	margin-top:9px;
+	margin-left:90px;
+
+}
+
+
+
+
+
+.left {
+
+	 text-align:left;
+	 width:90%;
+	 float:left
+}
+
+
+
+.highlightit img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 0.5;
+opacity: 0.7;
+	z-index:1px;
+
+}
+
+.highlightit:hover img{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 1;
+opacity: 1;
+}
+
+
+
+
+/*fancybox*/
+
+
+
+hr {
+	border: none;
+	height: 1px; line-height: 1px;
+	background: #E5E5E5;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+
+a img {
+	border: 1px solid #BBB;
+	padding: 2px;
+	margin: 10px 20px 10px 0;
+	vertical-align: top;
+}
+
+a img.last {
+	margin-right: 0;
+}
+
+ul {
+	margin-bottom: 24px;
+	padding-left: 30px;
+}
+
+ul li {
+display: inline ;
+padding: 0px 3px 0px 3px ;
+}
