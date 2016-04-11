@@ -92,19 +92,11 @@ color: #707070;
 #me {
 	width: 292px;
 	height:  179px;
-	background-image:url('images/me.jpg');
+
 	display:  inline;
 	float:  left;
 }
 
-#bio {
-	width: 450px;
-	float: right;
-	position: fixed;
-	margin-top:0px;
-	margin-left:310px;
-
-}
 
 
 #text_right{
